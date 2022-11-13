@@ -1,7 +1,8 @@
-<script setup>
-import SpeedSliderDemo from '/components/SpeedSliderDemo.vue'
-import RunProgramButtonDemo from '/components/RunProgramButtonDemo.vue'
-import SliderRGB from '/components/SliderRGB.vue'
+<script setup lang="ts">
+import SpeedSliderDemo from '../components/SpeedSliderDemo.vue'
+import RunResetButtonDemo from '../components/RunResetButtonDemo.vue'
+import RunLottieDemo from '../components/RunLottieDemo.vue';
+// import SliderRGB from '../components/SliderRGB.vue'
 </script>
 
 <template>
@@ -10,12 +11,13 @@ import SliderRGB from '/components/SliderRGB.vue'
       <v-container class="mx-auto my-auto">
         <v-row>
           <v-col cols="12" sm="6">
-            <RunProgramButtonDemo />
+            <RunResetButtonDemo />
             <br />
             <SpeedSliderDemo />
           </v-col>
           <v-col cols="12" sm="6">
-            <SliderRGB />
+            <RunLottieDemo />
+            <!-- <SliderRGB /> -->
           </v-col>
         </v-row>
       </v-container>

@@ -1,0 +1,13 @@
+// @rushstack/eslint-patch/modern-module-resolution // Mono repo
+// "plugin:vuetify/base"
+{
+  "extends": ["@antfu"],
+  "rules": {
+    "vue/html-comment-content-spacing": ["warn",
+    "always",
+    {
+      "exceptions": []
+    }
+  ]
+  }
+}

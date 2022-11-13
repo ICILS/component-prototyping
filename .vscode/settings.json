@@ -1,0 +1,16 @@
+{
+  "prettier.enable": true,
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "volar.codeLens.scriptSetupTools": true,
+  "volar.autoCompleteRefs": false,
+  "volar.preview.transparentGrid": false,
+  "vsicons.presets.hideFolders": false,
+  "vsicons.presets.jsonOfficial": false,
+  "vsicons.presets.tsOfficial": true,
+  "nuxt-vscode.root": ".",
+  "oneDarkPro.bold": false,
+  "prettier.bracketSameLine": true,
+  "nuxt.isNuxtApp": false
+}
