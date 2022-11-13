@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import SpeedSliderDemo from '../components/SpeedSliderDemo.vue'
-import RunResetButtonDemo from '../components/RunResetButtonDemo.vue'
-import RunLottieDemo from '../components/RunLottieDemo.vue';
-// import SliderRGB from '../components/SliderRGB.vue'
+import SpeedSliderDemo from './components/SpeedSliderDemo.vue'
+import RunResetButtonDemo from './components/RunResetButtonDemo.vue'
+import RunLottieDemo from './components/RunLottieDemo.vue';
+// import SliderRGB from './components/SliderRGB.vue'
+import LottieExampleVue from './components/LottieExample.vue';
 </script>
 
 <template>
@@ -14,10 +15,14 @@ import RunLottieDemo from '../components/RunLottieDemo.vue';
             <RunResetButtonDemo />
             <br />
             <SpeedSliderDemo />
-          </v-col>
-          <v-col cols="12" sm="6">
+            <br />
             <RunLottieDemo />
-            <!-- <SliderRGB /> -->
+          </v-col>
+          <!-- <v-col cols="12" sm="6">            
+            <SliderRGB />
+          </v-col> -->
+          <v-col cols="12" sm="6">            
+            <LottieExampleVue />
           </v-col>
         </v-row>
       </v-container>

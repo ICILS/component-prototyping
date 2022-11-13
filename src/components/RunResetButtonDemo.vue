@@ -23,7 +23,7 @@
 
 
 
-<script>
+<script lang="ts">
 export default {
   data() {
     return {
@@ -38,7 +38,7 @@ export default {
 }
 </script>
 
-<script setup>
-import RunResetButton from '/components/RunResetButton.vue'
+<script setup lang="ts">
+import RunResetButton from './RunResetButton.vue'
 
 </script>
