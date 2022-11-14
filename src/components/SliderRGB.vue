@@ -1,4 +1,5 @@
 <script setup></script>
+
 <script>
 export default {
   data() {
@@ -10,19 +11,20 @@ export default {
   },
 }
 </script>
+
 <template>
   <v-card max-width="400" style="margin: auto">
     <v-toolbar flat dense>
       <v-toolbar-title>
         <span class="text-subheading">RGB SLIDER</span>
       </v-toolbar-title>
-      <v-spacer></v-spacer>
+      <v-spacer />
     </v-toolbar>
-    <v-responsive :style="{ background: `rgb(${red}, ${green}, ${blue})` }" height="300px"></v-responsive>
+    <v-responsive :style="{ background: `rgb(${red}, ${green}, ${blue})` }" height="300px" />
 
     <v-card-text>
       <v-slider v-model="red" :max="255" :step="1" label="R" hide-details class="ma-4">
-        <template v-slot:append>
+        <template #append>
           <v-text-field
             v-model="red"
             type="number"
@@ -30,12 +32,12 @@ export default {
             density="compact"
             hide-details
             variant="outlined"
-          ></v-text-field>
+          />
         </template>
       </v-slider>
 
       <v-slider v-model="green" :max="255" :step="1" label="G" hide-details class="ma-4">
-        <template v-slot:append>
+        <template #append>
           <v-text-field
             v-model="green"
             type="number"
@@ -43,12 +45,12 @@ export default {
             density="compact"
             hide-details
             variant="outlined"
-          ></v-text-field>
+          />
         </template>
       </v-slider>
 
       <v-slider v-model="blue" :max="255" :step="1" label="B" hide-details class="ma-4">
-        <template v-slot:append>
+        <template #append>
           <v-text-field
             v-model="blue"
             type="number"
@@ -56,7 +58,7 @@ export default {
             density="compact"
             hide-details
             variant="outlined"
-          ></v-text-field>
+          />
         </template>
       </v-slider>
     </v-card-text>
