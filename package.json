@@ -5,13 +5,8 @@
     "dev": "vite",
     "build": "vite build",
     "debug": "node --inspect-brk ../../packages/vite/bin/vite",
-    "serve": "vite preview"
-  },
-  "devDependencies": {
-    "@mdi/js": "^7.0.96",
-    "@vue/compiler-sfc": "^3.2.31",
-    "@vuetify/vite-plugin": "^1.0.0-alpha.11",
-    "vite": "^2.9.12"
+    "lint": "eslint --fix",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@mdi/font": "^7.0.96",
@@ -19,6 +14,19 @@
     "tinymotion": "^0.2.0",
     "vue": "^3.2.31",
     "vue3-lottie": "^2.4.0",
-    "vuetify": "^3.0.0"
+    "vuetify": "^3.0.0",
+    "webfontloader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "latest",
+    "@mdi/js": "^7.0.96",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vue/compiler-sfc": "^3.2.31",
+    "archiver": "^5.3.1",
+    "eslint": "^8.0.1",
+    "shelljs": "^0.8.5",
+    "vite": "^3.0.8",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-vuetify": "^1.0.0-alpha.12"
   }
 }
