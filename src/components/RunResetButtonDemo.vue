@@ -1,44 +1,28 @@
- <!-- Here is the explanation for the code:
-      1. We declare the component with the name "RunProgramButton" and give it a template.
-      2. In the template, we use the "isPlaying" variable to determine which text to display.
-      3. We also use the "isPlaying" variable to determine which function to call when the button is clicked. -->
-<template>
-  <v-card max-width="400" style="margin: auto">
-    <v-toolbar flat dense>
-      <v-toolbar-title>
-        <span class="text-subheading">RUN BUTTON</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-    </v-toolbar>
-
-    <v-card-text>
-      <v-col>
-        <v-row class="justify-center">
-          <RunResetButton :isPlaying="isPlaying" @toggle="toggleButton()" />
-        </v-row>
-      </v-col>
-    </v-card-text>
-  </v-card>
-</template>
-
-
-
-<script lang="ts">
-export default {
-  data() {
-    return {
-      isPlaying: false,
-    }
-  },
-  methods: {
-    toggleButton() {
-      this.isPlaying = !this.isPlaying
-    },
-  },
-}
-</script>
-
 <script setup lang="ts">
 import RunResetButton from './RunResetButton.vue'
-
+import { store } from './store'
+const name = 'Run/Reset Toggle Buton Demo'
 </script>
+
+<template>
+  <v-card max-width="400" width="400" class="mx-auto">
+    <v-toolbar flat dense>
+      <v-card-title>
+        {{ name }}
+      </v-card-title>
+      <!-- <v-card-subtitle>This is a subtitle</v-card-subtitle> -->
+      <v-spacer />
+      <v-progress-circular v-if="store.isPlaying" class="mr-3" :indeterminate="store.isPlaying" color="amber" />
+    </v-toolbar>
+    <!-- A slot to display a centered componet  -->
+    <v-card-item>
+      <v-container>
+        <v-row class="justify-center">
+          <RunResetButton />
+        </v-row>
+      </v-container>
+    </v-card-item>
+    <!-- <v-card-text> This is content </v-card-text> -->
+    <v-card-text> Running? {{ store.isPlaying }} </v-card-text>
+  </v-card>
+</template>
