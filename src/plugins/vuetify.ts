@@ -32,7 +32,7 @@ export default createVuetify({
     },
     VBtn: {
       color: 'primary',
-      height: 44,
+      // height: 44,
       // minWidth: 120,
     },
     VBtnAlt: {
