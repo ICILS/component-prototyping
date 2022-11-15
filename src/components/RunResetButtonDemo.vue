@@ -5,7 +5,7 @@ const name = 'Run/Reset Toggle Buton Demo'
 </script>
 
 <template>
-  <v-card max-width="400" width="400" class="mx-auto">
+  <v-card max-width="400" min-width="360" class="mx-auto">
     <v-toolbar flat dense>
       <v-card-title>
         {{ name }}

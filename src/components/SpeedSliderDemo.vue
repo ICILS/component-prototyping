@@ -6,7 +6,7 @@ const name = 'Speed Slider Demo'
 </script>
 
 <template>
-  <v-card max-width="400" width="400" class="mx-auto">
+  <v-card max-width="400" min-width="360" class="mx-auto">
     <v-toolbar flat dense>
       <v-card-title> {{ name }} </v-card-title>
       <!-- <v-card-subtitle>This is a subtitle</v-card-subtitle> -->

@@ -10,7 +10,7 @@ const name = 'Run Lottie Demo'
 </script>
 
 <template>
-  <v-card max-width="400">
+  <v-card max-width="400" min-width="360">
     <v-toolbar flat dense>
       <v-toolbar-title>
         <span class="text-subheading">{{ name }}</span>
@@ -37,7 +37,7 @@ const name = 'Run Lottie Demo'
     </v-card-text>
 
     <v-card-actions>
-      <RunResetButton @click="store.toggleButton()" />
+      <RunResetButton />
     </v-card-actions>
   </v-card>
 </template>
