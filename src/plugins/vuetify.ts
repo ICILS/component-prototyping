@@ -53,6 +53,7 @@ export default createVuetify({
         dark: true,
         colors: {
           primary: '#1697f6',
+          bgLottie: '#F5BB5A',
         },
       },
     },
