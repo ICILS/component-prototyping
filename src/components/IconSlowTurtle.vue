@@ -1,26 +1,72 @@
 <script lang="ts">
+// Slow turtle icon
+// TODO: Check guide on component props and size variants
+// https://dev.to/ismail9k/use-svg-icons-with-vue-js-2km7
 export default {
-  name: 'TwemojiTurtle',
-  props: {
-    name: String,
-    size: String,
-    color: String,
-  },
+  name: 'SlowTurtle',
+  // props: {
+  //   name: String,
+  //   size: String,
+  //   color: String,
+  //   title: String,
+  //   desc: String,
+  // },
 }
 </script>
 
 <template>
-  <svg class="icon" width="1em" height="1em" viewBox="0 0 36 36">
-    <title>{{ props.title || props.name }}</title>
-    <desc v-if="props.desc">{{ props.desc }}</desc>
+  <svg class="icon" viewBox="0 0 36 36">
+    <!-- <title>{{ $props.title || $props.name }}</title>
+    <desc v-if="$props.desc">{{ $props.desc }}</desc> -->
     <path fill="#77B255" d="M9.842 19.922c0 9.842 6.575 9.673 5.158 10.078c-7 2-8.803-7.618-9.464-7.618c-2.378 0-5.536-.423-5.536-2.46C0 17.883 2.46 15 6.151 15c2.379 0 3.691 2.883 3.691 4.922zM36 28.638c0 1.104-3.518-.741-5 0c-2 1-2-.896-2-2s1.343-1 3-1s4 1.895 4 3z" /><path fill="#77B255" d="M16.715 33.143c0 2.761-1.279 2.857-2.857 2.857S11 35.903 11 33.143c0-.489.085-1.029.234-1.587c.69-2.59 2.754-5.556 4.052-5.556c1.578 0 1.429 4.382 1.429 7.143zm8.571 0c0 2.761 1.278 2.857 2.856 2.857C29.721 36 31 35.903 31 33.143a6.26 6.26 0 0 0-.234-1.587C30.075 28.966 28.012 26 26.714 26c-1.578 0-1.428 4.382-1.428 7.143z" /><path fill="#3E721D" d="M32 27c0 4-5.149 4-11.5 4S9 31 9 27c0-6.627 5.149-12 11.5-12S32 20.373 32 27z" /><circle cx="5" cy="18" r="1" fill="#292F33" /><path fill="#5C913B" d="M23.667 25.1c0 3.591-1.418 3.9-3.167 3.9s-3.167-.31-3.167-3.9S18.75 17 20.5 17s3.167 4.51 3.167 8.1zM30 24c.871 3.482-.784 4-2.533 4c-1.749 0-2.533.69-2.533-2.9s-1.116-6.5.633-6.5C27.315 18.6 29 20 30 24zm-13.933 1.1c0 3.591-.785 2.9-2.534 2.9s-3.404-.518-2.533-4c1-4 3.251-5.4 5-5.4c1.75 0 .067 2.91.067 6.5z" />
   </svg>
 </template>
 
 <style>
+/* default */
 .icon {
-  width: 1.5em;
-  height: 1.5em;
+  width: 1.2em;
+  height: 1.2em;
   fill: currentColor;
+}
+
+/* sizes */
+.icon.is-large {
+  width: 2em;
+  height: 2em;
+}
+.icon.is-medium {
+  width: 1.6em;
+  height: 1.6em;
+}
+.icon.is-normal {
+  width: 1.2em;
+  height: 1.2em;
+}
+.icon.is-small {
+  width: 1em;
+  height: 1em;
+}
+.icon.is-tiny {
+  width: 0.8em;
+  height: 0.8em;
+}
+
+/* colors */
+.icon.is-primary,
+.icon.is-blue {
+  fill: #2196F3
+}
+.icon.is-success,
+.icon.is-green {
+  fill: #4CAF50
+}
+.icon.is-danger,
+.icon.is-red  {
+  fill: #F44336
+}
+.icon.is-warning,
+.icon.is-orange {
+  fill: #FF9800
 }
 </style>
