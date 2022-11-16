@@ -1,15 +1,21 @@
 <script setup lang="ts">
 import { store } from './store'
+import IconSlowTurtleVue from './IconSlowTurtle.vue'
 
 const tickLabels = {
-  0: '1x 🐢',
+  0: '🐢',
   1: '',
-  2: ' 🚀 3x',
+  2: ' 🚀',
 }
 </script>
 
 <template>
   <v-responsive>
+    <!-- Fix this -->
+    <v-sheet class="mx-10">
+      <IconSlowTurtleVue />
+    </v-sheet>
+
     <v-slider
       id="speed-slider"
       v-model="store.speed"
@@ -37,4 +43,6 @@ const tickLabels = {
   </v-responsive>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>
