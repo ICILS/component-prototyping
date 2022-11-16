@@ -13,7 +13,7 @@ const tickLabels = {
     <v-slider
       id="speed-slider"
       v-model="store.speed"
-      class="my-1"
+      class="my-1 mt-2"
       color="orange"
       :max="2"
       :step="1"
